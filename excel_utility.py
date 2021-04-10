@@ -17,7 +17,7 @@ def file_read_utility(args):
 if __name__ == '__main__':
     print(sys.argv[1])
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('file_path', help="This will read Excel file")
+    arg_parser.add_argument('file_path', help="This reads Excel file")
 
     args = arg_parser.parse_args()
     sys.stdout.write(str(file_read_utility(args)))
